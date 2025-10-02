@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    
+}
+
+section:first-of-type{
+   border: 1px solid red;
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+section:nth-of-type(2){
+   
+    height: 100vh;
+    width: 100vw;
+    background-color: #003329;
+    z-index: 999;
+    position: relative;
+    
+}
+
+section:first-of-type img{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+
+}
+
+#plant{
+    z-index: 100;
+}
+
+
+
+#main-heading{
+    font-size: 80px;
+    z-index: 1;
+    color: white;
+
+}
+
