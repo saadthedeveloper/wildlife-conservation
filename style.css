@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+
 body{
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
@@ -53,17 +58,30 @@ section:first-of-type img{
 
 header{
     width: 100vw;
-    height: 10vh;
+    height: 15vh;
     display: flex;
+
+}
+
+#logo-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-div img{
+    width: 80px;
 }
 
 #horizontol-scroll-div, #logo-div{
-    width: 20vw;
-    background-color: red;
+    width: 8vw;
 }
 
 #nav-div{
-    width: 60vw;
+    width: 92vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #nav-div ul{
@@ -74,4 +92,14 @@ header{
 #nav-div ul li{
     text-decoration: none;
     list-style-type: none;
+    font-size: 20px;
+    padding: 15px 20px;
+    
+}
+
+.nav-list-item{
+    font-size: 20px;
+    border: 1px solid red;
+    padding: 15px 20px;
+    border-radius: 30px;
 }
