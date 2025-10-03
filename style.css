@@ -51,3 +51,27 @@ section:first-of-type img{
 
 }
 
+header{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+}
+
+#horizontol-scroll-div, #logo-div{
+    width: 20vw;
+    background-color: red;
+}
+
+#nav-div{
+    width: 60vw;
+}
+
+#nav-div ul{
+ display: flex;
+ gap: 20px;
+}
+
+#nav-div ul li{
+    text-decoration: none;
+    list-style-type: none;
+}
