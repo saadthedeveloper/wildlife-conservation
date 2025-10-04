@@ -9,10 +9,20 @@
   display: none;
 }
 
+a{
+    text-decoration: none;
+
+}
+html, body{
+
+    cursor: url('Assets/Images/green-small-cursor.png'), auto;
+}
+
 
 body{
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
+
     
 }
 
@@ -32,6 +42,7 @@ section:nth-of-type(2){
     background-color: #003329;
     z-index: 999;
     position: relative;
+        cursor: url('Assets/Images/white-small-cursor.png'), auto;
     
 }
 
@@ -62,6 +73,7 @@ header{
     display: flex;
     position: fixed;
     background-color: transparent;
+    z-index: 999;
 
 
 }
@@ -104,13 +116,17 @@ header{
     font-weight: 600;
 }
 
-#nav-div ul li:first-of-type{
+/*TEMPORARY*/
+#nav-div ul a:first-of-type li:first-of-type{
     background-color: #003329;
     color: white;
 }
+
+
 
 .nav-list-item{
     font-size: 20px;
     padding: 15px 20px;
     border-radius: 30px;
+      cursor: url('Assets/Images/green-big-cursor.png'), auto;
 }
