@@ -17,3 +17,33 @@ window.addEventListener('scroll', () => {
 
 });
 
+
+// Select all your sections
+const sections = document.querySelectorAll("section");
+
+// Create observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      console.log(`👉 ${entry.target.id} is visible`);
+
+      // Example actions per section
+      if (entry.target.id === "section1") {
+        document.querySelector("header").style.backgroundColor = "transparent";
+      }
+      if (entry.target.id === "section2") {
+        document.querySelector("header").style.backgroundColor = "#003329";
+      }
+      if (entry.target.id === "section3") {
+        document.querySelector("header").style.backgroundColor = "tomato";
+      }
+    }
+  });
+}, { threshold: 0.6 }); 
+// threshold 0.6 = fires when 60% of section is visible
+
+// Start observing each section
+sections.forEach(section => observer.observe(section));
+
+
+

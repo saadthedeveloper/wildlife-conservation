@@ -26,9 +26,12 @@ body{
     
 }
 
+section{
+    width: 100vw;
+    height: 100vh;
+}
+
 section:first-of-type{
-   height: 100vh;
-   width: 100vw;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -36,9 +39,6 @@ section:first-of-type{
 
 
 section:nth-of-type(2){
-   
-    height: 100vh;
-    width: 100vw;
     background-color: #003329;
     z-index: 999;
     position: relative;
@@ -74,21 +74,23 @@ header{
     position: fixed;
     background-color: transparent;
     z-index: 999;
-
-
+    border: 1px solid red;
+    
+    
 }
 
 #logo-div{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid red;
 }
 
 #logo-div img{
     width: 80px;
 }
 
-#horizontol-scroll-div, #logo-div{
+#horizontol-scroll-div-place-holder, #logo-div{
     width: 8vw;
 }
 
@@ -98,7 +100,8 @@ header{
     justify-content: center;
     align-items: center;
     background-color: transparent;
-
+    border: 1px solid red;
+    
 }
 
 #nav-div ul{
@@ -129,4 +132,15 @@ header{
     padding: 15px 20px;
     border-radius: 30px;
       cursor: url('Assets/Images/green-big-cursor.png'), auto;
+}
+
+#horizontol-scroll-div{
+    border: 1px solid red;
+    background-color: rgba(255, 250, 240, 0.301);
+    width: 4vw;
+    z-index: 9999;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+
 }
