@@ -30,13 +30,21 @@ const observer = new IntersectionObserver((entries) => {
       // Example actions per section
       if (entry.target.id === "section1") {
         document.querySelector("header").style.backgroundColor = "transparent";
+        document.querySelector("#position-scroll-div-1").style.backgroundColor = "white";
+        document.querySelector("#position-scroll-div-2").style.backgroundColor = "transparent";
+        document.querySelector("#position-scroll-div-3").style.backgroundColor = "transparent";
       }
       if (entry.target.id === "section2") {
         document.querySelector("header").style.backgroundColor = "#ffffff41";
-
+        document.querySelector("#position-scroll-div-2").style.backgroundColor = "white";
+        document.querySelector("#position-scroll-div-1").style.backgroundColor = "transparent";
+        document.querySelector("#position-scroll-div-3").style.backgroundColor = "transparent";
       }
       if (entry.target.id === "section3") {
         document.querySelector("header").style.backgroundColor = "#ffffff41";
+        document.querySelector("#position-scroll-div-3").style.backgroundColor = "white";
+        document.querySelector("#position-scroll-div-2").style.backgroundColor = "transparent";
+        document.querySelector("#position-scroll-div-1").style.backgroundColor = "transparent";
       }
     }
   });
