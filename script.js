@@ -32,14 +32,15 @@ const observer = new IntersectionObserver((entries) => {
         document.querySelector("header").style.backgroundColor = "transparent";
       }
       if (entry.target.id === "section2") {
-        document.querySelector("header").style.backgroundColor = "#003329";
+        document.querySelector("header").style.backgroundColor = "#ffffff41";
+
       }
       if (entry.target.id === "section3") {
-        document.querySelector("header").style.backgroundColor = "tomato";
+        document.querySelector("header").style.backgroundColor = "#ffffff41";
       }
     }
   });
-}, { threshold: 0.6 }); 
+}, { threshold: 0.5 }); 
 // threshold 0.6 = fires when 60% of section is visible
 
 // Start observing each section
