@@ -3,6 +3,10 @@ let hillRight = document.querySelector("#hill4");
 let hillLeft = document.querySelector("#hill3");
 let leaf = document.querySelector("#leaf");
 let hillback1 = document.querySelector("#hill1");
+let navHomeButton = document.querySelector("#home-nav-button");
+let navAboutButton = document.querySelector("#about-nav-button");
+let navLocationButton = document.querySelector("#location-nav-button");
+let navContactButton = document.querySelector("#contact-nav-button");
 
 
 

@@ -82,7 +82,7 @@ header{
     position: fixed;
     background-color: transparent;
     z-index: 99999;
-    border: 1px solid red;
+   
 
     transition: 0.5s;/*Temporary*/
     
@@ -93,7 +93,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+  
 }
 
 #logo-div img{
@@ -110,7 +110,7 @@ header{
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    border: 1px solid red;
+
     
 }
 
@@ -125,15 +125,9 @@ header{
     list-style-type: none;
     font-size: 20px;
     padding: 15px 20px;
-    color: #003329;
     font-weight: 600;
 }
 
-/*TEMPORARY*/
-#nav-div ul a:first-of-type li:first-of-type{
-    background-color: #003329;
-    color: white;
-}
 
 
 
@@ -145,9 +139,9 @@ header{
 }
 
 #horizontol-scroll-div{
-    border: 1px solid red;
-    background-color: rgba(255, 250, 240, 0.301);
-    width: 4vw;
+ 
+    background-color: #003329;
+    width: 3vw;
     z-index: 9999;
     height: 100vh;
     position: fixed;
@@ -167,4 +161,14 @@ header{
     transition: 0.5s;
 
 
+}
+
+.active-list-item{
+    background-color: #003329;
+    color: white;
+}
+
+.unactive-list-item{
+    background-color: transparent;
+    color: #003329;
 }
