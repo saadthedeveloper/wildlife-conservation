@@ -136,6 +136,8 @@ header{
     padding: 15px 20px;
     border-radius: 30px;
       cursor: url('Assets/Images/green-big-cursor.png'), auto;
+      background-color: transparent;
+      color: #003329;
 }
 
 #horizontol-scroll-div{
@@ -163,12 +165,9 @@ header{
 
 }
 
+
 .active-list-item{
     background-color: #003329;
     color: white;
 }
 
-.unactive-list-item{
-    background-color: transparent;
-    color: #003329;
-}

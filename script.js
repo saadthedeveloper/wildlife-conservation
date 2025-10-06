@@ -3,20 +3,23 @@ let hillRight = document.querySelector("#hill4");
 let hillLeft = document.querySelector("#hill3");
 let leaf = document.querySelector("#leaf");
 let hillback1 = document.querySelector("#hill1");
-let navHomeButton = document.querySelector("#home-nav-button");
-let navAboutButton = document.querySelector("#about-nav-button");
-let navLocationButton = document.querySelector("#location-nav-button");
-let navContactButton = document.querySelector("#contact-nav-button");
+const navButtons = document.querySelectorAll(".nav-list-item");
 
+navButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    navButtons.forEach(btn => btn.classList.remove("active-list-item"));
+    button.classList.add("active-list-item");
+  });
+});
 
 
 window.addEventListener('scroll', () => {
-    let value = window.scrollY;
-    mainHeading.style.marginTop = value * 2.5 + 'px';
-    hillRight.style.marginRight = value * 0.3 + 'px';
-    hillLeft.style.marginLeft = value * 0.3 + 'px';
-    leaf.style.marginLeft = value * 1.3 + 'px';
-    hillback1.style.marginTop = value * 0.9 + 'px';
+  let value = window.scrollY;
+  mainHeading.style.marginTop = value * 2.5 + 'px';
+  hillRight.style.marginRight = value * 0.3 + 'px';
+  hillLeft.style.marginLeft = value * 0.3 + 'px';
+  leaf.style.marginLeft = value * 1.3 + 'px';
+  hillback1.style.marginTop = value * 0.9 + 'px';
 
 
 });
@@ -52,7 +55,7 @@ const observer = new IntersectionObserver((entries) => {
       }
     }
   });
-}, { threshold: 0.5 }); 
+}, { threshold: 0.5 });
 // threshold 0.6 = fires when 60% of section is visible
 
 // Start observing each section
