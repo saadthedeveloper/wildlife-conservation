@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,59 +6,94 @@
 }
 
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
-a{
+a {
     text-decoration: none;
 
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
-html, body{
+
+html,
+body {
 
     cursor: url('Assets/Images/green-small-cursor.png'), auto;
 }
 
 
-body{
+body {
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
 
-    
+
 }
 
-section{
+section {
     width: 100vw;
     height: 100vh;
 
 }
 
-section:first-of-type{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+#home-buttons-div {
+    width: 50vw;
+    height: 20vh;
+   
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 
-section:nth-of-type(2){
+}
+
+#home-buttons-div button {
+    width: 16vw;
+    font-size: 20px;
+    padding: 10px 0;
+    border-radius: 30px;     
+    border: 3px solid;
+}
+
+#donate-home-button{
+    background-color: #003329;
+    color: white;
+    border: white;
+}
+
+#membership-home-button{
+    background-color: transparent;
+    color: white;
+    border: white;
+}
+
+section:nth-of-type(2) {
     background-color: #003329;
     z-index: 999;
     position: relative;
-        cursor: url('Assets/Images/white-small-cursor.png'), auto;
-    
+    cursor: url('Assets/Images/white-small-cursor.png'), auto;
+
 }
 
-section:nth-of-type(3){
+section:nth-of-type(3) {
     background-color: #003329;
-    z-index: 999;
+    z-index: 99;
     position: relative;
-        cursor: url('Assets/Images/white-small-cursor.png'), auto;
-    
+    cursor: url('Assets/Images/white-small-cursor.png'), auto;
+
 }
-section:first-of-type img{
+
+section:first-of-type img {
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -66,65 +101,67 @@ section:first-of-type img{
 
 }
 
-#plant{
+#plant {
     z-index: 100;
 }
 
 
 
-#main-heading{
+#main-heading {
     font-size: 80px;
     z-index: 1;
     color: white;
 
 }
 
-header{
+header {
     width: 100vw;
     height: 15vh;
     display: flex;
     position: fixed;
     background-color: transparent;
     z-index: 99999;
-   
 
-    transition: 0.5s;/*Temporary*/
-    
-    
+
+    transition: 0.5s;
+    /*Temporary*/
+
+
 }
 
-#logo-div{
+#logo-div {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
 }
 
-#logo-div img{
+#logo-div img {
     width: 80px;
 }
 
-#horizontol-scroll-div-place-holder, #logo-div{
+#horizontol-scroll-div-place-holder,
+#logo-div {
     width: 8vw;
 }
 
-#nav-div{
+#nav-div {
     width: 92vw;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
 
-    
-}
-
-#nav-div ul{
- display: flex;
- gap: 20px;
 
 }
 
-#nav-div ul li{
+#nav-div ul {
+    display: flex;
+    gap: 20px;
+
+}
+
+#nav-div ul li {
     text-decoration: none;
     list-style-type: none;
     font-size: 20px;
@@ -135,17 +172,17 @@ header{
 
 
 
-.nav-list-item{
+.nav-list-item {
     font-size: 20px;
     padding: 15px 20px;
     border-radius: 30px;
-      cursor: url('Assets/Images/green-big-cursor.png'), auto;
-      background-color: transparent;
-      color: #003329;
+    cursor: url('Assets/Images/green-big-cursor.png'), auto;
+    background-color: transparent;
+    color: #003329;
 }
 
-#horizontol-scroll-div{
- 
+#horizontol-scroll-div {
+
     background-color: #003329;
     width: 3vw;
     z-index: 9999;
@@ -159,7 +196,7 @@ header{
 
 }
 
-.position-scroll-div{
+.position-scroll-div {
     width: 15px;
     height: 15px;
     border: 1px solid white;
@@ -170,8 +207,7 @@ header{
 }
 
 
-.active-list-item{
+.active-list-item {
     background-color: #003329;
     color: white;
 }
-
