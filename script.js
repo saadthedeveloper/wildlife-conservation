@@ -15,7 +15,7 @@ navButtons.forEach(button => {
 
 window.addEventListener('scroll', () => {
   let value = window.scrollY;
-  mainHeading.style.marginTop = value * 2.5 + 'px';
+  mainHeading.style.marginTop = value * 2.0 + 'px';
   hillRight.style.marginRight = value * 0.3 + 'px';
   hillLeft.style.marginLeft = value * 0.3 + 'px';
   leaf.style.marginLeft = value * 1.3 + 'px';
