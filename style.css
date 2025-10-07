@@ -48,7 +48,6 @@ section:first-of-type {
 #home-buttons-div {
     width: 50vw;
     height: 20vh;
-   
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -62,19 +61,18 @@ section:first-of-type {
     font-size: 20px;
     padding: 10px 0;
     border-radius: 30px;     
-    border: 3px solid;
+    border: 3px solid white;
+    color: white;
 }
 
 #donate-home-button{
     background-color: #003329;
-    color: white;
-    border: white;
+    cursor: url('Assets/Images/white-big-cursor.png'), auto;
 }
 
 #membership-home-button{
     background-color: transparent;
-    color: white;
-    border: white;
+    cursor: url('Assets/Images/green-big-cursor.png'), auto;
 }
 
 section:nth-of-type(2) {
