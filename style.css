@@ -48,7 +48,7 @@ section:first-of-type {
 #home-buttons-div {
     width: 50vw;
     height: 20vh;
-    z-index: 999;
+    z-index: 9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,6 +96,7 @@ section:first-of-type img {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+    pointer-events: none;
 
 }
 
