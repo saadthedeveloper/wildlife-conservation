@@ -80,7 +80,46 @@ section:nth-of-type(2) {
     z-index: 999;
     position: relative;
     cursor: url('Assets/Images/white-small-cursor.png'), auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 
+}
+
+section:nth-of-type(2) #section2-img-main-div{
+    display: flex;
+}
+
+section:nth-of-type(2) #section2-heading{
+    font-size: 80px;
+    color: #1f413a;
+    border: 1px solid white;
+
+}
+
+section:nth-of-type(2) #section2-about-us-text-main-div{
+    width: 50vw;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+}
+
+section:nth-of-type(2) .section-2-img-inner-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+}
+
+section:nth-of-type(2) .section-2-img-inner-div p {
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+    width: 25vw;
 }
 
 section:nth-of-type(3) {
