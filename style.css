@@ -122,6 +122,13 @@ section:nth-of-type(2) .section-2-img-inner-div p {
     width: 25vw;
 }
 
+#banner-text-section2{
+    background-color: white;
+    color: #003329;
+    font-size: 25px;
+    width: 100vw;
+}
+
 section:nth-of-type(3) {
     background-color: #003329;
     z-index: 99;
