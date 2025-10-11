@@ -124,7 +124,7 @@ section:nth-of-type(2) .section-2-img-inner-div p {
   
     text-align: center;
     color: white;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 14px;
     width: 25vw;
 }
@@ -137,9 +137,28 @@ section:nth-of-type(2) .section-2-img-inner-div h2
 #banner-text-section2{
     background-color: white;
     color: #003329;
-    font-size: 20px;
-    width: 100vw;
+    font-size: 28px;
+    white-space: nowrap ;
     text-align: center;
+    display: flex;
+    gap: 10px;
+    font-weight: 700;
+}
+
+#banner-text-section2 span{
+    animation: marquee 40s infinite linear;
+    padding: 20px 0;
+}
+
+@keyframes marquee {
+	/* Element one fully ON screen at left-edge of container. */
+	from {
+		transform: translateX( 0% );
+	}
+	/* Element one fully OFF screen (just beyond left-ledge of container). */
+	to {
+		transform: translateX( -100% );
+	}
 }
 
 section:nth-of-type(3) {
