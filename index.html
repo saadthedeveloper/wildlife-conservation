@@ -105,7 +105,30 @@
     </section>
 
     <section id="section3">
-        <p></p>
+        <h2 id="section3-heading">Locations</h2>
+        <div id="map"></div>
+
+<!-- Leaflet CSS & JS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+  // Initialize the map
+  var map = L.map('map').setView([24.8607, 67.0011], 12); // Karachi coordinates
+
+  // Add map tiles
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Add markers for your locations
+  L.marker([24.8607, 67.0011]).addTo(map)
+    .bindPopup('GamerChimp Karachi').openPopup();
+
+  L.marker([31.5204, 74.3587]).addTo(map)
+    .bindPopup('GamerChimp Lahore');
+</script>
+
     </section>
     <script src="script.js"></script>
 </body>
