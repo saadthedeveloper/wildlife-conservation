@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Chewy&family=Oxanium:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 
 <body>
@@ -109,27 +110,16 @@
         <div id="map"></div>
 
 <!-- Leaflet CSS & JS -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+       <div id="section3-button-div">
+        <button>Learn More</button>
+        <button>Contact a Location</button>
+       </div>
 
-<script>
-  // Initialize the map
-  var map = L.map('map').setView([24.8607, 67.0011], 12); // Karachi coordinates
 
-  // Add map tiles
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap contributors'
-  }).addTo(map);
-
-  // Add markers for your locations
-  L.marker([24.8607, 67.0011]).addTo(map)
-    .bindPopup('GamerChimp Karachi').openPopup();
-
-  L.marker([31.5204, 74.3587]).addTo(map)
-    .bindPopup('GamerChimp Lahore');
-</script>
 
     </section>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="map.js"></script>
     <script src="script.js"></script>
 </body>
 
