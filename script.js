@@ -40,18 +40,21 @@ const observer = new IntersectionObserver((entries) => {
         document.querySelector("#position-scroll-div-1").style.backgroundColor = "white";
         document.querySelector("#position-scroll-div-2").style.backgroundColor = "transparent";
         document.querySelector("#position-scroll-div-3").style.backgroundColor = "transparent";
+        document.querySelector("#horizontol-scroll-div").style.backgroundColor = "#003329";
       }
       if (entry.target.id === "section2") {
         document.querySelector("header").style.backgroundColor = "#ffffff41";
         document.querySelector("#position-scroll-div-2").style.backgroundColor = "white";
         document.querySelector("#position-scroll-div-1").style.backgroundColor = "transparent";
         document.querySelector("#position-scroll-div-3").style.backgroundColor = "transparent";
+        document.querySelector("#horizontol-scroll-div").style.backgroundColor = "transparent";
       }
       if (entry.target.id === "section3") {
         document.querySelector("header").style.backgroundColor = "#ffffff41";
         document.querySelector("#position-scroll-div-3").style.backgroundColor = "white";
         document.querySelector("#position-scroll-div-2").style.backgroundColor = "transparent";
         document.querySelector("#position-scroll-div-1").style.backgroundColor = "transparent";
+        document.querySelector("#horizontol-scroll-div").style.backgroundColor = "transparent";
       }
     }
   });
