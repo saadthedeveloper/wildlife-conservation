@@ -60,17 +60,17 @@ section:first-of-type {
     width: 16vw;
     font-size: 20px;
     padding: 10px 0;
-    border-radius: 30px;     
+    border-radius: 30px;
     border: 2px solid white;
     color: white;
 }
 
-#donate-home-button{
+#donate-home-button {
     background-color: #003329;
     cursor: url('Assets/Images/white-big-cursor.png'), auto;
 }
 
-#membership-home-button{
+#membership-home-button {
     background-color: transparent;
     cursor: url('Assets/Images/green-big-cursor.png'), auto;
 }
@@ -84,66 +84,67 @@ section:nth-of-type(2) {
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    height: 116vh ;
+    height: 116vh;
 
 }
 
-section:nth-of-type(2) #section2-img-main-div{
+section:nth-of-type(2) #section2-img-main-div {
     display: flex;
 }
 
-section:nth-of-type(2) #section2-img-main-div .section-2-img-inner-div img{
+section:nth-of-type(2) #section2-img-main-div .section-2-img-inner-div img {
     width: 300px;
     height: 200px;
     object-fit: cover;
-    
+
 }
 
-section:nth-of-type(2) #section2-heading{
+section:nth-of-type(2) #section2-heading {
     font-size: 80px;
     color: #1f413a;
-    
-    
+
+
 }
 
 
 
-#section3{
+#section3 {
     display: flex;
     gap: 20px;
     flex-direction: column;
     align-items: center;
 }
 
-#section3-heading{
+#section3-heading {
     font-size: 80px;
     color: #1f413a;
     text-align: center;
 }
-#map{
+
+#map {
     width: 45vw;
     height: 350px;
     border: 10px solid white;
 }
 
 
-section:nth-of-type(2) #section2-about-us-text-main-div{
+section:nth-of-type(2) #section2-about-us-text-main-div {
     width: 50vw;
     text-align: center;
     color: white;
     font-size: 20px;
-    
+
 }
 
-section:nth-of-type(2) .section-2-img-inner-div{
+section:nth-of-type(2) .section-2-img-inner-div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 section:nth-of-type(2) .section-2-img-inner-div p {
-    
+
     text-align: center;
     color: white;
     font-weight: 200;
@@ -151,64 +152,65 @@ section:nth-of-type(2) .section-2-img-inner-div p {
     width: 25vw;
 }
 
-section:nth-of-type(2) .section-2-img-inner-div h2
-{
+section:nth-of-type(2) .section-2-img-inner-div h2 {
     color: white;
 }
 
-#banner-text-section2{
+#banner-text-section2 {
     background-color: white;
     color: #003329;
     font-size: 28px;
-    white-space: nowrap ;
+    white-space: nowrap;
     text-align: center;
     display: flex;
     gap: 10px;
     font-weight: 700;
 }
 
-#section3-button-div{
+#section3-button-div {
     display: flex;
     gap: 20px;
-    width: 80vw ;
+    width: 80vw;
     justify-content: center;
     align-items: center;
 }
 
 
 
-#section3-button-div button{
+#section3-button-div button {
     width: 16vw;
     font-size: 20px;
     padding: 10px 0;
-    border-radius: 30px;     
+    border-radius: 30px;
     border: 2px solid white;
     color: white;
     background-color: #003329;
     text-align: center;
 }
 
-#section3-button-div #contact-a-location-button{
+#section3-button-div #contact-a-location-button {
     width: 20vw;
     background-color: white;
     color: #003329;
 }
 
 
-#banner-text-section2 span{
+#banner-text-section2 span {
     animation: marquee 40s infinite linear;
     padding: 20px 0;
 }
 
 @keyframes marquee {
-	/* Element one fully ON screen at left-edge of container. */
-	from {
-		transform: translateX( 0% );
-	}
-	/* Element one fully OFF screen (just beyond left-ledge of container). */
-	to {
-		transform: translateX( -100% );
-	}
+
+    /* Element one fully ON screen at left-edge of container. */
+    from {
+        transform: translateX(0%);
+    }
+
+    /* Element one fully OFF screen (just beyond left-ledge of container). */
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 section:nth-of-type(3) {
@@ -220,7 +222,7 @@ section:nth-of-type(3) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 
 }
 
@@ -343,7 +345,7 @@ header {
     color: white;
 }
 
-#section4{
+#section4 {
     height: 200vh;
     width: 100vw;
     background-color: #003329;
@@ -351,24 +353,25 @@ header {
     z-index: 999;
     padding-top: 75px;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
-#section4-heading{
+#section4-heading {
     font-size: 80px;
     color: #1f413a;
     text-align: center;
     line-height: 70px;
 }
 
-#section3-sub-heading-div{
+#section3-sub-heading-div {
     color: white;
     text-align: center;
     font-size: 25px;
     font-weight: 100;
 }
 
-#section4-para-button-div{
+#section4-para-button-div {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -377,7 +380,7 @@ header {
     margin-top: 40px;
 }
 
-#section4-img-button-div{
+#section4-img-button-div {
     width: 40vw;
     height: 100%;
     display: flex;
@@ -386,7 +389,7 @@ header {
     flex-direction: column;
 }
 
-#section4-para-div{
+#section4-para-div {
     width: 40vw;
     height: 100%;
     font-size: 20px;
@@ -398,38 +401,72 @@ header {
     flex-direction: column;
 }
 
-#section4-img-div img{
+#section4-img-div img {
     width: 400px;
     border: 10px solid white;
 }
 
-#section4-img-div
-{
+#section4-img-div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#section4-button-div{
-display: flex;
-justify-content: space-around;
-width: 100%;
+#section4-button-div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
-#section4-button-div #search-oppurtunities{
+#section4-button-div #search-oppurtunities {
 
     width: 19vw;
     background-color: white;
     color: #003329;
 }
 
-#section4-button-div button{
+#section4-button-div button {
     width: 16vw;
     font-size: 20px;
     padding: 10px 0;
-    border-radius: 30px;     
+    border-radius: 30px;
     border: 2px solid white;
     color: white;
     background-color: #003329;
     text-align: center;
+}
+
+#why-WCS-div {
+    display: flex;
+    border: 1px dashed #3b6960;
+    border-radius: 20px;
+    padding: 40px;
+    width: 93vw;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.why-WCS-sub-divs {
+    width: 45%;
+    color: white;
+    display: flex;
+    gap: 10px;
+    height: 180px;
+}
+
+.why-WCS-sub-divs-imgs img {
+    width: 85px;
+}
+
+.why-WCS-sub-divs-p p
+{
+    font-size: 20px;
+}
+
+.why-WCS-sub-divs-p h3{
+    font-size: 25px;
 }
