@@ -14,6 +14,11 @@ a {
 
 }
 
+p{
+    font-weight: 200;
+    
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -454,7 +459,7 @@ header {
     font-size: 25px;
 }
 
-#section-5 {
+#section5 {
     width: 100vw;
     height: 180vh;
     background-color: #003329;
@@ -680,7 +685,7 @@ header {
 
 
 footer{
-    background-color: #003329;
+    background-color: #161817;
     z-index: 999;
     position: relative;
     display: flex;
@@ -690,30 +695,30 @@ footer{
 
 #footer-div-right{
     width: 50%;
-    border: 1px solid white;
+    
 }
 
 #footer-div-left{
     width: 50%;
-    border: 1px solid white;
+   border-right: 1px solid rgba(255, 255, 255, 0.178);
     display: flex;
     align-items: center;
-    flex-direction: column;
     gap: 30px;
+    padding: 30px 0;
+    flex-direction: column;
+  
 }
 
 #about-us-footer-div{
     width: 90%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
 }
 
 #social-footer-div{
     display: flex;
     flex-direction: column;
-    border: 1px solid white;
+    gap: 10px;
     width: 90%;
 }
 
@@ -721,29 +726,71 @@ footer{
 {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    padding: 10px;
-    border: 1px solid white;
+    padding: 10px 10px;
     width: 150px;
+    border: 1px solid rgba(255, 255, 255, 0.178);
+    border-radius: 20px;
+    gap: 10px;
+    
 }
 
 .social-buttons-text{
-   border: 1px solid white;
    display: inline-block;
    width: 80%;
+  
 }
 
 .social-buttons-logo{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
     width: 20%;
+
 }
 
+.news-img-div img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
 
+.news-img-div{
+   
+    width: 12%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.news-sub-div{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
 
+#lastest-news-div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-heading-div {
+    width: 80%;
+    text-align: left;
+}
+
+.news-heading-div h3{
+  
+    padding-left: 10px;
+    font-weight: 200;
+}
+
+footer hr{
+    border: 1px solid  rgba(255, 255, 255, 0.178);
+    border-bottom: hidden;
+}
 
 
 
