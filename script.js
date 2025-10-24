@@ -4,6 +4,12 @@ let hillLeft = document.querySelector("#hill3");
 let leaf = document.querySelector("#leaf");
 let hillback1 = document.querySelector("#hill1");
 const navButtons = document.querySelectorAll(".nav-list-item");
+const cursor = document.querySelector("#cursor");
+
+document.addEventListener("mousemove", e => {
+    cursor.style.top = (e.pageY - 8)+"px";
+    cursor.style.left = (e.pageX - 8)+"px";
+});
 
 navButtons.forEach(button => {
   button.addEventListener("click", () => {
