@@ -21,13 +21,10 @@ p {
 
 html {
     scroll-behavior: smooth;
+    cursor: url('Assets/Images/cursor.png'), auto;
 }
 
-html,
-body {
 
-    cursor: url('Assets/Images/green-small-cursor.png'), auto;
-}
 
 
 body {
@@ -72,19 +69,16 @@ section:first-of-type {
 
 #donate-home-button {
     background-color: #003329;
-    cursor: url('Assets/Images/white-big-cursor.png'), auto;
 }
 
 #membership-home-button {
     background-color: transparent;
-    cursor: url('Assets/Images/green-big-cursor.png'), auto;
 }
 
 section:nth-of-type(2) {
     background-color: #003329;
     z-index: 999;
     position: relative;
-    cursor: url('Assets/Images/white-small-cursor.png'), auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -223,7 +217,6 @@ section:nth-of-type(3) {
     background-color: #003329;
     z-index: 99;
     position: relative;
-    cursor: url('Assets/Images/white-small-cursor.png'), auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -312,7 +305,6 @@ header {
     font-size: 20px;
     padding: 15px 20px;
     border-radius: 30px;
-    cursor: url('Assets/Images/green-big-cursor.png'), auto;
     background-color: transparent;
     color: #003329;
 }
@@ -834,4 +826,20 @@ gap: 10px;
     list-style: none;
     padding: 10px 0;
     font-weight: 200;
+}
+
+#cursor {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.178);
+    border-radius: 50%;
+    z-index: 9999;
+    transition: 200ms;
+    pointer-events: none;
+}
+
+button, li{
+    cursor: url('Assets/Images/cursor.png'), auto;
 }
