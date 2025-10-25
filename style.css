@@ -246,33 +246,28 @@ section:first-of-type img {
 
 }
 
-header {
-    width: 100vw;
-    height: 15vh;
-    display: flex;
-    position: fixed;
-    background-color: transparent;
-    z-index: 99999;
+/***************************************************/
+/*                    NAVBAR                       */
+/***************************************************/
 
-
-    transition: 0.5s;
-    /*Temporary*/
-
-
+.header-solid {
+  background-color: #ffffff41 !important;
 }
 
-#logo-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.header-transparent {
+  background-color: transparent !important;
 }
 
-#logo-div img {
-    width: 80px;
+.nav-btn {
+  background-color: transparent;
+  color: #003329;
+  transition: background-color .15s, color .15s;
 }
 
-
+.nav-btn.active {
+  background-color: #003329 !important;
+  color: white !important;
+}
 
 #nav-div {
     width: 92vw;
@@ -280,14 +275,11 @@ header {
     justify-content: center;
     align-items: center;
     background-color: transparent;
-
-
 }
 
 #nav-div ul {
     display: flex;
     gap: 20px;
-
 }
 
 #nav-div ul li {
@@ -298,33 +290,48 @@ header {
     font-weight: 600;
 }
 
-
-
-
 .nav-list-item {
     font-size: 20px;
     padding: 15px 20px;
     border-radius: 30px;
-    background-color: transparent;
-    color: #003329;
+    transition: 200ms;
+}
+
+header {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    position: fixed;
+    z-index: 99999;
+}
+
+#logo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-div img {
+    width: 80px;
 }
 
 
 
-.position-scroll-div {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    transition: 0.5s;
 
 
-}
 
 
-.active-list-item {
-    background-color: #003329;
-    color: white;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 #section4 {
     height: 220vh;
@@ -843,3 +850,13 @@ gap: 10px;
 button, li{
     cursor: url('Assets/Images/cursor.png'), auto;
 }
+
+
+
+
+
+
+
+
+
+
