@@ -270,11 +270,12 @@ section:first-of-type img {
 }
 
 #nav-div {
-    width: 92vw;
+    width: 84%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    
 }
 
 #nav-div ul {
@@ -299,16 +300,19 @@ section:first-of-type img {
 
 header {
     width: 100vw;
-    height: 15vh;
+    padding: 12px 0;
     display: flex;
     position: fixed;
     z-index: 99999;
+    
 }
 
 #logo-div {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    width: 8%;
 }
 
 #logo-div img {
