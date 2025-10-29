@@ -1,5 +1,8 @@
   // Initialize the map
-  var map = L.map('map').setView([38.7946, 106.5348], 3); 
+  var map = L.map('map', {
+  scrollWheelZoom: false // disables zooming with mouse scroll
+}).setView([38.7946, 106.5348], 3);
+
 
   // Add map tiles
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
