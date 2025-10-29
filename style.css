@@ -261,7 +261,7 @@ section:first-of-type img {
 .nav-btn {
   background-color: transparent;
   color: #003329;
-  transition: background-color .15s, color .15s;
+  transition: background-color .15s;
 }
 
 .nav-btn.active {
@@ -275,7 +275,6 @@ section:first-of-type img {
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    
 }
 
 #nav-div ul {
@@ -295,7 +294,6 @@ section:first-of-type img {
     font-size: 20px;
     padding: 15px 20px;
     border-radius: 30px;
-    transition: 200ms;
 }
 
 header {
@@ -304,14 +302,13 @@ header {
     display: flex;
     position: fixed;
     z-index: 99999;
-    
+    transition: background-color .15s;
 }
 
 #logo-div {
     display: flex;
     justify-content: center;
     align-items: center;
-    
     width: 8%;
 }
 
