@@ -31,79 +31,53 @@ window.addEventListener('scroll', () => {
 });
 
 
-// Wait for DOM loaded in case script is in head
-document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('section');
-  const header = document.querySelector('header');
-
-  if (!sections.length) {
-    console.warn('No <section> elements found.');
-    return;
-  }
-  if (!header) {
-    console.warn('No <header> element found.');
-    return;
-  }
-
-  // Map section id -> nav button id (edit if your IDs differ)
-  const navMap = {
-    section1: 'home-nav-button',
-    section2: 'about-nav-button',
-    section3: 'locations-nav-button',
-    section4: 'careers-nav-button',
-    section5: 'newsroom-nav-button',
-  };
-
-  // Pre-cache nav elements and warn if missing
-  const navCache = {};
-  Object.entries(navMap).forEach(([sectionId, btnId]) => {
-    const el = document.getElementById(btnId);
-    if (!el) console.warn(`Nav button not found for "${sectionId}" -> "#${btnId}"`);
-    else {
-      el.classList.add('nav-btn'); // ensure base class present
-      navCache[sectionId] = el;
+// Function to update active nav link
+function updateActiveNav() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-list-item a');
+    const header = document.querySelector('header');
+    
+    let currentSection = '';
+    
+    // Find which section is currently in view
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        if (window.scrollY >= (sectionTop - sectionHeight / 3)) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+    
+    // Update active class on nav links
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+            link.classList.add('active');
+        }
+    });
+    
+    // Update header background based on first section scroll position
+    const firstSection = document.querySelector('#section1');
+    if (firstSection) {
+        const firstSectionHeight = firstSection.offsetHeight;
+        const halfwayPoint = firstSectionHeight / 2;
+        
+        if (window.scrollY > halfwayPoint) {
+            header.classList.remove('header-transparent');
+            header.classList.add('header-solid');
+        } else {
+            header.classList.remove('header-solid');
+            header.classList.add('header-transparent');
+        }
     }
-  });
+}
 
-  // Helper to reset all navs
-  const resetNavs = () => {
-    Object.values(navCache).forEach(btn => btn.classList.remove('active'));
-  };
+// Add scroll event listener
+window.addEventListener('scroll', updateActiveNav);
 
-  // IntersectionObserver: choose the entry with maximum intersectionRatio
-  const observer = new IntersectionObserver((entries) => {
-    if (!entries || !entries.length) return;
-
-    // pick entry with highest intersectionRatio
-    const visible = entries.reduce((best, e) => 
-      (!best || e.intersectionRatio > best.intersectionRatio) ? e : best
-    , null);
-
-    if (!visible || !visible.isIntersecting) {
-      // nothing visible enough (optional: reset)
-      // resetNavs();
-      return;
-    }
-
-    const id = visible.target.id;
-    // header background: section1 -> transparent, others -> solid
-    if (id === 'section1') {
-      header.classList.add('header-transparent');
-      header.classList.remove('header-solid');
-    } else {
-      header.classList.add('header-solid');
-      header.classList.remove('header-transparent');
-    }
-
-    // highlight the corresponding nav
-    resetNavs();
-    const activeBtn = navCache[id];
-    if (activeBtn) activeBtn.classList.add('active');
-    else console.warn(`No cached nav button for visible section id "${id}"`);
-  }, { threshold: [0.4] }); // multiple thresholds help accurate ratio
-
-  sections.forEach(s => observer.observe(s));
-});
+// Also update on page load
+document.addEventListener('DOMContentLoaded', updateActiveNav);
 
 
 
