@@ -251,65 +251,64 @@ section:first-of-type img {
 /***************************************************/
 
 .header-solid {
-  background-color: #ffffff41 !important;
+  background-color: #ffffff73 !important;
+  transition: 1s;
 }
 
 .header-transparent {
-  background-color: transparent !important;
+    background-color: transparent !important;
+    transition: 1s;
 }
 
-.nav-btn {
-  background-color: transparent;
-  color: #003329;
-  transition: background-color .15s;
+#nav-div{
+    width: 80%;
+    /* border: 1px solid rgb(255, 0, 0); */
 }
 
-.nav-btn.active {
-  background-color: #003329 !important;
-  color: white !important;
-}
-
-#nav-div {
-    width: 84%;
+#nav-div ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
+    flex-direction: row;
+    gap: 5%;
 }
 
-#nav-div ul {
-    display: flex;
-    gap: 20px;
-}
-
-#nav-div ul li {
-    text-decoration: none;
-    list-style-type: none;
+#nav-div ul li{
+    list-style: none;
     font-size: 20px;
-    padding: 15px 20px;
-    font-weight: 600;
 }
 
-.nav-list-item {
-    font-size: 20px;
-    padding: 15px 20px;
+.nav-list-item a{
+    color: #003329;
+    width: 135px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
     border-radius: 30px;
+}
+
+.nav-list-item a.active{
+    color:white;
+    background-color: #003329;
 }
 
 header {
     width: 100vw;
-    padding: 12px 0;
+    padding: 7px 0;
     display: flex;
+    align-items: center;
     position: fixed;
     z-index: 99999;
     transition: background-color .15s;
+    /* border: 1px solid red; */
 }
 
 #logo-div {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 8%;
+    width: 10%;
+    /* border: 1px solid rgb(255, 0, 0); */
 }
 
 #logo-div img {
