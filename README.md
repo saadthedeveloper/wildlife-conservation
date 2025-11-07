@@ -4,6 +4,11 @@ A **responsive, interactive, and visually engaging website** for the Wildlife Co
 
 ---
 
+Live Demo: [![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen?style=for-the-badge)](https://your-live-site-url.com)
+
+
+---
+
 ## Features
 
 * **Responsive Layout:** Works on desktop and mobile devices.
