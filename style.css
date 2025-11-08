@@ -36,7 +36,6 @@ body {
 
 section {
     width: 100vw;
-    height: 100vh;
 
 }
 
@@ -45,6 +44,7 @@ section:first-of-type {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 #home-buttons-div {
@@ -83,8 +83,7 @@ section:nth-of-type(2) {
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    height: 116vh;
-
+    border: 1px solid  red;
 }
 
 section:nth-of-type(2) #section2-img-main-div {
@@ -115,6 +114,7 @@ section:nth-of-type(2) #section2-heading {
 }
 
 #section3-heading {
+
     font-size: 80px;
     color: #1f413a;
     text-align: center;
