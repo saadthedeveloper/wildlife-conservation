@@ -24,6 +24,26 @@ html {
     cursor: url('Assets/Images/cursor.png'), auto;
 }
 
+.button {
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+.green-button
+{
+    background-color: #003329;
+    color: white;
+}
+
+.white-button
+{
+    background-color: white;
+    color: #003329;
+}
+
 
 
 
@@ -44,231 +64,8 @@ section {
 
 
 /*******************************
-*         SECTION 1            *
+*           NAVBAR             *
 *******************************/
-#section1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-#home-buttons-div {
-    width: 50vw;
-    height: 20vh;
-    z-index: 9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-}
-
-#home-buttons-div button {
-    width: 16vw;
-    font-size: 20px;
-    padding: 10px 0;
-    border-radius: 30px;
-    border: 2px solid white;
-    color: white;
-}
-
-#donate-home-button {
-    background-color: #003329;
-}
-
-#membership-home-button {
-    background-color: transparent;
-}
-
-
-
-
-
-/*******************************
-*         SECTION 2            *
-*******************************/
-#section2 {
-    padding: 10px 0;
-    background-color: #003329;
-    z-index: 999;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    border: 1px solid red;
-}
-
-#section2-img-main-div {
-    display: flex;
-    border: 1px solid red;
-}
-
-#section2-img-main-div .section-2-img-inner-div img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-
-}
-
-#section2-heading {
-    font-size: 80px;
-    color: #1f413a;
-    border: 1px solid red;
-    line-height: 1;
-}section:nth-of-type(2) #section2-about-us-text-main-div {
-    width: 50vw;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-
-}
-
-section:nth-of-type(2) .section-2-img-inner-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-section:nth-of-type(2) .section-2-img-inner-div p {
-
-    text-align: center;
-    color: white;
-    font-weight: 200;
-    font-size: 14px;
-    width: 25vw;
-}
-
-section:nth-of-type(2) .section-2-img-inner-div h2 {
-    color: white;
-}
-
-#banner-text-section2 {
-    background-color: white;
-    color: #003329;
-    font-size: 28px;
-    white-space: nowrap;
-    text-align: center;
-    display: flex;
-    gap: 10px;
-    font-weight: 700;
-}
-
-
-
-
-
-/*******************************
-*         SECTION 3            *
-*******************************/
-#section3 {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid red;
-}
-
-#section3-heading {
-
-    font-size: 80px;
-    color: #1f413a;
-    text-align: center;
-}
-
-#map {
-    width: 65vw;
-    height: 350px;
-    border: 10px solid white;
-}
-
-
-#section3-button-div {
-    display: flex;
-    gap: 20px;
-    width: 80vw;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-#section3-button-div button {
-    width: 16vw;
-    font-size: 20px;
-    padding: 10px 0;
-    border-radius: 30px;
-    border: 2px solid white;
-    color: white;
-    background-color: #003329;
-    text-align: center;
-}
-
-#section3-button-div #contact-a-location-button {
-    width: 20vw;
-    background-color: white;
-    color: #003329;
-}
-
-
-#banner-text-section2 span {
-    animation: marquee 40s infinite linear;
-    padding: 20px 0;
-}
-
-@keyframes marquee {
-
-    /* Element one fully ON screen at left-edge of container. */
-    from {
-        transform: translateX(0%);
-    }
-
-    /* Element one fully OFF screen (just beyond left-ledge of container). */
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-section:nth-of-type(3) {
-    height: 100vh;
-    background-color: #003329;
-    z-index: 99;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-section:first-of-type img {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    pointer-events: none;
-
-}
-
-#plant {
-    z-index: 100;
-}
-
-
-
-#main-heading {
-    font-size: 80px;
-    z-index: 1;
-    color: white;
-
-}
-
-/***************************************************/
-/*                    NAVBAR                       */
-/***************************************************/
 
 .header-solid {
     background-color: #ffffff73 !important;
@@ -334,6 +131,212 @@ header {
 #logo-div img {
     width: 80px;
 }
+
+
+
+
+
+/*******************************
+*         SECTION 1            *
+*******************************/
+#section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#home-buttons-div {
+    width: 50vw;
+    height: 20vh;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#home-buttons-div button {
+    width: 16vw;
+    font-size: 20px;
+    padding: 10px 0;
+    border-radius: 30px;
+    border: 2px solid white;
+    color: white;
+}
+
+#donate-home-button {
+    background-color: #003329;
+}
+
+#membership-home-button {
+    background-color: transparent;
+}
+#section1 img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#plant {
+    z-index: 100;
+}
+
+#main-heading {
+    font-size: 80px;
+    z-index: 1;
+    color: white;
+
+}
+
+
+
+
+
+/*******************************
+*         SECTION 2            *
+*******************************/
+#section2 {
+    padding: 10px 0;
+    background-color: #003329;
+    z-index: 999;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid red;
+}
+
+#section2-img-main-div {
+    display: flex;
+    border: 1px solid red;
+}
+
+#section2-img-main-div .section-2-img-inner-div img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+#section2-heading {
+    font-size: 80px;
+    color: #1f413a;
+    border: 1px solid red;
+    line-height: 1;
+}
+
+#section2-about-us-text-main-div {
+    width: 50vw;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border: 1px solid red;
+
+}
+
+.section-2-img-inner-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section-2-img-inner-div p {
+
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    font-size: 14px;
+    width: 25vw;
+}
+
+.section-2-img-inner-div h2 {
+    color: white;
+}
+
+#banner-text-section2 {
+    background-color: white;
+    color: #003329;
+    font-size: 28px;
+    white-space: nowrap;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    font-weight: 700;
+}
+
+#banner-text-section2 span {
+    animation: marquee 40s infinite linear;
+    padding: 20px 0;
+}
+
+@keyframes marquee {
+
+    /* Element one fully ON screen at left-edge of container. */
+    from {
+        transform: translateX(0%);
+    }
+
+    /* Element one fully OFF screen (just beyond left-ledge of container). */
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+/*******************************
+*         SECTION 3            *
+*******************************/
+#section3 {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-color: #003329;
+    z-index: 99;
+    position: relative;
+    border: 1px solid red;
+}
+
+#section3-heading {
+
+    font-size: 80px;
+    color: #1f413a;
+    text-align: center;
+    border: 1px solid red;
+    line-height: 1;
+}
+
+#map {
+    width: 60vw;
+    height: 300px;
+    border: 10px solid white;
+}
+
+#section3-button-div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+
+
+
+
+
+
 
 
 
