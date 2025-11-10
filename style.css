@@ -117,7 +117,7 @@ header {
     position: fixed;
     z-index: 99999;
     transition: background-color .15s;
-    /* border: 1px solid red; */
+    /*  */
 }
 
 #logo-div {
@@ -201,7 +201,7 @@ header {
 *         SECTION 2            *
 *******************************/
 #section2 {
-    padding: 10px 0;
+    padding: 30px 0;
     background-color: #003329;
     z-index: 999;
     position: relative;
@@ -209,12 +209,12 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    border: 1px solid red;
+    
 }
 
 #section2-img-main-div {
     display: flex;
-    border: 1px solid red;
+    
 }
 
 #section2-img-main-div .section-2-img-inner-div img {
@@ -227,7 +227,7 @@ header {
 #section2-heading {
     font-size: 80px;
     color: #1f413a;
-    border: 1px solid red;
+    
     line-height: 1;
 }
 
@@ -236,7 +236,7 @@ header {
     text-align: center;
     color: white;
     font-size: 20px;
-    border: 1px solid red;
+    
 
 }
 
@@ -297,7 +297,7 @@ header {
 *         SECTION 3            *
 *******************************/
 #section3 {
-    padding: 10px 0;
+    padding: 30px 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -305,7 +305,7 @@ header {
     background-color: #003329;
     z-index: 99;
     position: relative;
-    border: 1px solid red;
+    
 }
 
 #section3-heading {
@@ -313,7 +313,7 @@ header {
     font-size: 80px;
     color: #1f413a;
     text-align: center;
-    border: 1px solid red;
+    
     line-height: 1;
 }
 
@@ -328,72 +328,48 @@ header {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*******************************
+*         SECTION 4            *
+*******************************/
 #section4 {
     width: 100vw;
     background-color: #003329;
     position: relative;
     z-index: 999;
-    padding-top: 75px;
+    padding: 30px 0;
     display: flex;
+    gap: 20px;
     align-items: center;
     flex-direction: column;
-    border: 1px solid red;
+    
 }
 
 #section4-heading {
     font-size: 80px;
     color: #1f413a;
     text-align: center;
-    line-height: 70px;
-}
+    line-height: 1;
+    
 
-#section3-sub-heading-div {
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 100;
 }
 
 #section4-para-button-div {
     width: 100vw;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 40px;
+    
 }
 
-#section4-img-button-div {
-    width: 40vw;
-    height: 100%;
+#section4-img-div {
+    width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -401,16 +377,18 @@ header {
 }
 
 #section4-para-div {
-    width: 40vw;
+    width: 50%;
+    padding: 0 70px;
+    
     height: 100%;
     font-size: 20px;
     text-align: center;
     color: white;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     flex-direction: column;
+    gap: 40px;
 }
+
 
 #section4-img-div img {
     width: 400px;
@@ -454,7 +432,6 @@ header {
     padding: 40px;
     width: 93vw;
     flex-wrap: wrap;
-    margin-top: 70px;
     gap: 25px;
     justify-content: center;
     align-items: center;
@@ -481,6 +458,26 @@ header {
     font-size: 25px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #section5 {
     width: 100vw;
     background-color: #003329;
@@ -491,7 +488,7 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    border: 1px solid red;
+    
 }
 
 #section5-heading-div {
@@ -684,7 +681,7 @@ header {
     align-items: center;
     gap: 30px;
     height: 50vh;
-    border: 1px solid red;
+    .
 }
 
 #section6-heading-div h2 {
