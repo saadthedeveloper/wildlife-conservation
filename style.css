@@ -462,22 +462,9 @@ header {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*******************************
+*         SECTION 5            *
+*******************************/
 #section5 {
     width: 100vw;
     background-color: #003329;
@@ -487,12 +474,12 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     
 }
 
 #section5-heading-div {
-    width: 100vw;
+    width: 100%;
     text-align: center;
 
 }
@@ -506,72 +493,72 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 93vw;
-    padding: 20px;
-    gap: 20px;
+    padding: 30px;
     border: 1px dashed #536e69;
     border-radius: 20px;
-
 }
 
-#section5-sub-div-left {
-    width: 25%;
+#section5-sub-div-left-right {
+    width: 23%;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    /* border: 1px solid red; */
 
 }
 
-.section5-sub-sub-div-left {
+.section5-sub-sub-div-left-right {
     width: 100%;
-    height: 450px;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.493);
+    height: 340px;
+    border-radius: 10px;
+    /* border: 1px solid red; */
     background-color: #1f413a;
-    padding: 10px;
-}
-
-.section5-sub-sub-div-left-img {
-    height: 200px;
     overflow: hidden;
-    border-radius: 20px;
+    
 }
 
-.section5-sub-sub-div-left-img img {
+.section5-sub-sub-div-left-right-img {
+    height: 150px;
+    overflow: hidden;
+    /* border-radius: 20px; */
+}
+
+.section5-sub-sub-div-left-right-img img {
     width: 100%;
 
 
 }
 
-.section5-sub-sub-div-left-date-location {
+.section5-sub-sub-div-left-right-date-location {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 7px;
 }
 
-.section5-sub-sub-div-left-date-location span {
+.section5-sub-sub-div-left-right-date-location span {
     color: #536e69;
-    font-weight: 800;
+    font-weight: 500;
+    font-size: 10px;
 }
 
-.section5-sub-sub-div-left-title {
+.section5-sub-sub-div-left-right-title {
     width: 100%;
     padding: 7px;
     text-align: center;
 }
 
-.section5-sub-sub-div-left-title h4 {
+.section5-sub-sub-div-left-right-title h4 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #section5-sub-div-middle {
     width: 100%;
     border-radius: 20px;
     padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.493);
     background-color: #1f413a;
 }
 
@@ -605,8 +592,8 @@ header {
 
 .section5-sub-sub-div-middle-img {
     overflow: hidden;
-    height: 350px;
-    border-radius: 20px;
+    height: 300px;
+    border-radius: 10px;
 }
 
 .section5-sub-sub-div-middle-img img {
@@ -672,6 +659,19 @@ header {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 #section6 {
     background-color: #003329;
     position: relative;
@@ -733,7 +733,7 @@ footer {
 
 }
 
-#footer-div-left {
+#footer-div-left-right {
     width: 50%;
     border-right: 1px solid rgba(255, 255, 255, 0.178);
     display: flex;
