@@ -356,8 +356,6 @@ header {
     color: #1f413a;
     text-align: center;
     line-height: 1;
-    
-
 }
 
 #section4-para-button-div {
@@ -378,8 +376,7 @@ header {
 
 #section4-para-div {
     width: 50%;
-    padding: 0 70px;
-    
+    padding: 0 70px;  
     height: 100%;
     font-size: 20px;
     text-align: center;
@@ -511,16 +508,19 @@ header {
 
 .section5-sub-sub-div-left-right {
     width: 100%;
-    height: 340px;
+    height: 350px;
     border-radius: 10px;
     /* border: 1px solid red; */
     background-color: #1f413a;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
 
 .section5-sub-sub-div-left-right-img {
-    height: 150px;
+    height: 40%;
     overflow: hidden;
     /* border-radius: 20px; */
 }
@@ -548,6 +548,9 @@ header {
     width: 100%;
     padding: 7px;
     text-align: center;
+    /* border: 1px solid red; */
+    height: 40%;
+
 }
 
 .section5-sub-sub-div-left-right-title h4 {
@@ -555,19 +558,25 @@ header {
     font-size: 15px;
 }
 
+/*Middle Section*/
+
 #section5-sub-div-middle {
     width: 100%;
-    border-radius: 20px;
-    padding: 10px;
+    height: 490px;
+    border-radius: 10px;
     background-color: #1f413a;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /*border: 1px solid red;*/
 }
 
 #newsroom-middle-section {
     width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 40px;
 }
 
 #section5-sub-sub-div-middle-title {
@@ -575,25 +584,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-
 }
 
 #section5-sub-sub-div-middle-title h3 {
-    font-size: 40px;
+    font-size: 50px;
     color: white;
-
+    line-height: 1;
 }
 
 #section5-sub-sub-div-middle-post {
     width: 100%;
-
 }
 
 .section5-sub-sub-div-middle-img {
     overflow: hidden;
     height: 300px;
-    border-radius: 10px;
 }
 
 .section5-sub-sub-div-middle-img img {
@@ -606,7 +611,8 @@ header {
     display: flex;
     justify-content: center;
     gap: 15px;
-    padding: 7px;
+    line-height: 1;
+    /*border: 1px solid red;*/
 }
 
 .section5-sub-sub-div-middle-date-location span {
@@ -625,17 +631,15 @@ header {
     font-weight: 600;
     font-size: 20px;
     text-align: center;
+    /* border: 1px solid pink; */
 }
 
-
-
-
-#section5-sub-sub-div-middle-buttons {
+#section5-sub-sub-middle-description-div {
     width: 100%;
     display: flex;
     flex-direction: column;
-
-
+    gap: 10px;
+    border: 1px solid white;
 }
 
 .section5-sub-div-middle-post-button {
@@ -644,9 +648,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #003329;
-    padding: 20px;
-
-
+    /*border: 1px solid red;*/
 }
 
 .section5-sub-div-middle-post-button button {
@@ -656,7 +658,6 @@ header {
     border-radius: 30px;
     border: none;
     color: #003329;
-
 }
 
 
