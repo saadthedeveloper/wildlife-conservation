@@ -77,12 +77,12 @@ section {
     transition: 1s;
 }
 
-#nav-div {
+#nav-bar {
     width: 80%;
     /* border: 1px solid rgb(255, 0, 0); */
 }
 
-#nav-div ul {
+#nav-bar ul{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,12 +90,12 @@ section {
     gap: 5%;
 }
 
-#nav-div ul li {
+#nav-bar ul li {
     list-style: none;
     font-size: 20px;
 }
 
-.nav-list-item a {
+.nav-button a {
     color: #003329;
     width: 135px;
     text-align: center;
@@ -104,7 +104,7 @@ section {
     border-radius: 30px;
 }
 
-.nav-list-item a.active {
+.nav-button a.active {
     color: white;
     background-color: #003329;
 }
@@ -120,7 +120,7 @@ header {
     /*  */
 }
 
-#logo-div {
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +128,7 @@ header {
     /* border: 1px solid rgb(255, 0, 0); */
 }
 
-#logo-div img {
+.logo img {
     width: 80px;
 }
 
