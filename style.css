@@ -465,6 +465,7 @@ header {
 #section5 {
     width: 100vw;
     background-color: #003329;
+    padding: 30px 0;
     position: relative;
     z-index: 999;
     color: white;
@@ -472,12 +473,13 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    
+    /* border: 1px solid red; */
 }
 
 #section5-heading-div {
     width: 100%;
     text-align: center;
+    /* border: 1px solid red; */
 
 }
 
@@ -526,6 +528,8 @@ header {
     /* border-radius: 20px; */
 }
 
+    
+    
 .section5-sub-sub-div-left-right-img img {
     width: 100%;
 
@@ -542,7 +546,7 @@ header {
 .section5-sub-sub-div-left-right-date-location span {
     color: #536e69;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .section5-sub-sub-div-left-right-title {
@@ -571,6 +575,7 @@ header {
     height: 400px;
     border-radius: 10px;
     background-color: #1f413a;
+    border: 2px solid rgba(255, 255, 255, 0.178);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -621,7 +626,7 @@ header {
     /*border: 1px solid red;*/
     color: rgba(255, 255, 255, 0.178);
     font-weight: 500;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .section5-sub-sub-div-middle-post-title {
@@ -672,11 +677,9 @@ header {
 
 
 
-
-
-
-
-
+/*******************************
+*         SECTION 6            *
+*******************************/
 #section6 {
     background-color: #003329;
     position: relative;
@@ -684,18 +687,27 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    height: 50vh;
-    .
+    gap: 20px;
+    padding: 30px 0 60px 0;
+    /* border: 1px solid red; */
+}
+
+#section6-heading-div
+{
+/* border: 1px solid rgb(0, 85, 255); */
+width: 100%;
+text-align: center;
 }
 
 #section6-heading-div h2 {
     font-size: 40px;
     color: white;
+    line-height: 1;
+    /* border: 1px solid red; */
 }
 
 #section6-p-div {
-    width: 70vw;
+    width: 70%;
 }
 
 #section6-p-div p {
@@ -717,6 +729,16 @@ header {
     color: #003329;
     font-weight: 700;
 }
+
+
+
+
+
+
+
+/*******************************
+*           FOOTER             *
+*******************************/
 
 
 footer {
