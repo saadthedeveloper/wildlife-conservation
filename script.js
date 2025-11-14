@@ -3,7 +3,7 @@ let hillRight = document.querySelector("#hill4");
 let hillLeft = document.querySelector("#hill3");
 let leaf = document.querySelector("#leaf");
 let hillback1 = document.querySelector("#hill1");
-const navButtons = document.querySelectorAll(".nav-list-item");
+const navButtons = document.querySelectorAll(".nav-button");
 const cursor = document.querySelector("#cursor");
 
 
@@ -34,7 +34,7 @@ window.addEventListener('scroll', () => {
 // Function to update active nav link
 function updateActiveNav() {
     const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-list-item a');
+    const navLinks = document.querySelectorAll('.nav-button a');
     const header = document.querySelector('header');
     
     let currentSection = '';
