@@ -1,8 +1,8 @@
 let mainHeading = document.querySelector("#main-heading");
-let hillRight = document.querySelector("#hill4");
-let hillLeft = document.querySelector("#hill3");
-let leaf = document.querySelector("#leaf");
-let hillback1 = document.querySelector("#hill1");
+let hillRight = document.querySelector(".hero-section-img--hill4");
+let hillLeft = document.querySelector(".hero-section-img--hill3");
+let leaf = document.querySelector(".hero-section-img--leaf");
+let hillback1 = document.querySelector(".hero-section-img--hill1");
 const navButtons = document.querySelectorAll(".nav-button");
 const cursor = document.querySelector("#cursor");
 
@@ -19,16 +19,28 @@ document.addEventListener("mousemove", e => {
 });
 
 
+//Parallax
+const section1 = document.querySelector('#hero-section');
 
-window.addEventListener('scroll', () => {
-  let value = window.scrollY;
-  mainHeading.style.marginTop = value * 2.0 + 'px';
-  hillRight.style.marginRight = value * 0.3 + 'px';
-  hillLeft.style.marginLeft = value * 0.3 + 'px';
-  leaf.style.marginLeft = value * 1.3 + 'px';
-  hillback1.style.marginTop = value * 0.9 + 'px';
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      window.addEventListener('scroll', scrollHandler);
+    } else {
+      window.removeEventListener('scroll', scrollHandler);
+    }
+  });
+}, { threshold: 0 });
 
-});
+observer.observe(section1);
+
+function scrollHandler() {
+  let scrollY = window.scrollY - section1.offsetTop;
+  scrollY = Math.max(0, scrollY);
+  document.documentElement.style.setProperty('--scroll', scrollY + 'px');
+}
+
+
 
 
 // Function to update active nav link
@@ -58,7 +70,7 @@ function updateActiveNav() {
     });
     
     // Update header background based on first section scroll position
-    const firstSection = document.querySelector('#section1');
+    const firstSection = document.querySelector('#hero-section');
     if (firstSection) {
         const firstSectionHeight = firstSection.offsetHeight;
         const halfwayPoint = firstSectionHeight / 2;
