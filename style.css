@@ -230,7 +230,7 @@ header {
 /*******************************
 *         SECTION 2            *
 *******************************/
-#section2 {
+.section-about {
     padding: 30px 0;
     background-color: #003329;
     z-index: 999;
@@ -239,46 +239,38 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    
 }
 
-#section2-img-main-div {
+.about-cards {
     display: flex;
-    
 }
 
-#section2-img-main-div .section-2-img-inner-div img {
+.about-cards .about-card img {
     width: 300px;
     height: 200px;
     object-fit: cover;
-
 }
 
-#section2-heading {
+.about-heading {
     font-size: 80px;
     color: #1f413a;
-    
     line-height: 1;
 }
 
-#section2-about-us-text-main-div {
+.about-text-container {
     width: 50vw;
     text-align: center;
     color: white;
     font-size: 20px;
-    
-
 }
 
-.section-2-img-inner-div {
+.about-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
-.section-2-img-inner-div p {
-
+.about-card-text {
     text-align: center;
     color: white;
     font-weight: 200;
@@ -286,11 +278,11 @@ header {
     width: 25vw;
 }
 
-.section-2-img-inner-div h2 {
+.about-card h2 {
     color: white;
 }
 
-#banner-text-section2 {
+.about-banner {
     background-color: white;
     color: #003329;
     font-size: 28px;
@@ -301,23 +293,20 @@ header {
     font-weight: 700;
 }
 
-#banner-text-section2 span {
-    animation: marquee 40s infinite linear;
+.about-banner span {
+    animation: marquee 30s infinite linear;
     padding: 20px 0;
 }
 
 @keyframes marquee {
-
-    /* Element one fully ON screen at left-edge of container. */
     from {
         transform: translateX(0%);
     }
-
-    /* Element one fully OFF screen (just beyond left-ledge of container). */
     to {
         transform: translateX(-100%);
     }
 }
+
 
 
 
