@@ -59,6 +59,23 @@ section {
 
 }
 
+#cursor {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.178);
+    border-radius: 50%;
+    z-index: 9999;
+    transition: 200ms;
+    pointer-events: none;
+}
+
+button,
+li {
+    cursor: url('Assets/Images/cursor.png'), auto;
+}
+
 
 
 /******************/
@@ -324,31 +341,28 @@ header {
     background-color: #003329;
     z-index: 99;
     position: relative;
-    
 }
 
-#section3-heading {
-
+.section-heading {
     font-size: 80px;
     color: #1f413a;
     text-align: center;
-    
     line-height: 1;
 }
 
-#map {
+.map {
     width: 60vw;
     height: 300px;
     border: 10px solid white;
 }
 
-#section3-button-div {
+.button-group {
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
-    
 }
+
 
 
 
@@ -367,35 +381,46 @@ header {
     gap: 20px;
     align-items: center;
     flex-direction: column;
-    
 }
 
-#section4-heading {
+/* ---------- Heading ---------- */
+
+.section-heading {
     font-size: 80px;
     color: #1f413a;
     text-align: center;
     line-height: 1;
 }
 
-#section4-para-button-div {
+.section-heading-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------- Main Content Layout ---------- */
+
+.para-button-wrapper {
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
 }
 
-#section4-img-div {
+.img-wrapper {
     width: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
-#section4-para-div {
+.img-wrapper img {
+    width: 400px;
+    border: 10px solid white;
+}
+
+.para-wrapper {
     width: 50%;
-    padding: 0 70px;  
+    padding: 0 70px;
     height: 100%;
     font-size: 20px;
     text-align: center;
@@ -405,32 +430,26 @@ header {
     gap: 40px;
 }
 
-
-#section4-img-div img {
-    width: 400px;
-    border: 10px solid white;
+.section-para {
+    font-size: 20px;
 }
 
-#section4-img-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* ---------- Buttons ---------- */
 
-#section4-button-div {
+.button-wrapper {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
 
-#section4-button-div #search-oppurtunities {
-
+.button-wrapper .search-opportunities {
     width: 19vw;
     background-color: white;
     color: #003329;
 }
 
-#section4-button-div button {
+.button-wrapper button,
+.default-button {
     width: 16vw;
     font-size: 20px;
     padding: 10px 0;
@@ -441,7 +460,9 @@ header {
     text-align: center;
 }
 
-#why-WCS-div {
+/* ---------- WHY WCS Section ---------- */
+
+.why-wcs-wrapper {
     display: flex;
     border: 1px dashed #3b6960;
     border-radius: 20px;
@@ -451,10 +472,9 @@ header {
     gap: 25px;
     justify-content: center;
     align-items: center;
-
 }
 
-.why-WCS-sub-divs {
+.why-wcs-item {
     width: 45%;
     color: white;
     display: flex;
@@ -462,17 +482,18 @@ header {
     height: 180px;
 }
 
-.why-WCS-sub-divs-imgs img {
+.why-wcs-img img {
     width: 85px;
 }
 
-.why-WCS-sub-divs-p p {
+.why-wcs-text h3 {
+    font-size: 25px;
+}
+
+.why-wcs-text p {
     font-size: 20px;
 }
 
-.why-WCS-sub-divs-p h3 {
-    font-size: 25px;
-}
 
 
 
@@ -481,6 +502,7 @@ header {
 /*******************************
 *         SECTION 5            *
 *******************************/
+/* SECTION WRAPPER */
 #section5 {
     width: 100vw;
     background-color: #003329;
@@ -492,22 +514,21 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    /* border: 1px solid red; */
 }
 
-#section5-heading-div {
+/* SECTION HEADING */
+.section-heading-wrapper {
     width: 100%;
     text-align: center;
-    /* border: 1px solid red; */
-
 }
 
-#section5-heading-div h2 {
+.section-heading {
     font-size: 80px;
     color: #1f413a;
 }
 
-#section5-main-news-div {
+/* MAIN NEWS LAYOUT */
+.main-news-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -518,78 +539,89 @@ header {
     border-radius: 20px;
 }
 
-#section5-sub-div-left-right {
+/* COLUMNS */
+.news-column {
     width: 23%;
     display: flex;
     flex-direction: column;
     gap: 25px;
-    /*border: 1px solid red;*/
-
 }
 
-.section5-sub-sub-div-left-right {
+/* NEWS CARD (LEFT/RIGHT) */
+.news-card {
     width: 100%;
     height: 300px;
     border-radius: 10px;
-    /*border: 1px solid red;*/
     background-color: #1f413a;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     border: 2px solid rgba(255, 255, 255, 0.178);
-    
 }
 
-.section5-sub-sub-div-left-right-img {
+.news-card-img {
     height: 50%;
     overflow: hidden;
-    /* border-radius: 20px; */
 }
 
-    
-    
-.section5-sub-sub-div-left-right-img img {
+.news-card-img img {
     width: 100%;
-
-
 }
 
-.section5-sub-sub-div-left-right-date-location {
+.news-card-date-location {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 7px;
 }
 
-.section5-sub-sub-div-left-right-date-location span {
+.news-card-date-location span {
     color: #536e69;
     font-weight: 500;
     font-size: 11px;
 }
 
-.section5-sub-sub-div-left-right-title {
+.news-card-title {
     width: 100%;
     padding: 7px;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    /*border: 1px solid red;*/
     height: 40%;
     background-color: rgba(255, 255, 255, 0.178);
     color: #003329;
-
 }
 
-.section5-sub-sub-div-left-right-title h4 {
+.news-card-title h4 {
     font-weight: 700;
     font-size: 15px;
 }
 
-/*Middle Section*/
+/* ---------- MIDDLE SECTION ---------- */
 
-#section5-sub-div-middle {
+.news-middle-section {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.middle-section-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-section-title h3 {
+    font-size: 50px;
+    color: white;
+    line-height: 1;
+}
+
+.middle-news-card {
     width: 100%;
     height: 400px;
     border-radius: 10px;
@@ -599,93 +631,56 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /*border: 1px solid red;*/
 }
 
-#newsroom-middle-section {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    /* border: 1px solid blue; */
-}
-
-#section5-sub-sub-div-middle-title {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#section5-sub-sub-div-middle-title h3 {
-    font-size: 50px;
-    color: white;
-    line-height: 1;
-}
-
-
-
-.section5-sub-sub-div-middle-img {
-    overflow: hidden;
+.middle-card-img {
     height: 300px;
-    /*border: 1px solid red;*/
+    overflow: hidden;
 }
 
-.section5-sub-sub-div-middle-img img {
+.middle-card-img img {
     width: 100%;
-    /*temporary*/
 }
 
-.section5-sub-sub-div-middle-date-location {
+.middle-card-date-location {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 7px;
-    line-height: 1;
-    /*border: 1px solid red;*/
-    color: rgba(255, 255, 255, 0.178);
     font-weight: 500;
     font-size: 11px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.178);
 }
 
-.section5-sub-sub-div-middle-post-title {
+.middle-card-title {
+    height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid gray; */
-    height: 40%;
     background-color: rgba(255, 255, 255, 0.178);
     color: #003329;
-
 }
 
-.section5-sub-sub-div-middle-post-title h4 {
+.middle-card-title h4 {
     font-weight: 600;
     font-size: 20px;
     text-align: center;
-    /*border: 1px solid pink;*/
 }
 
-#section5-sub-sub-middle-description-div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border: 1px solid white;
-}
-
-.section5-sub-div-middle-post-button {
+/* MIDDLE BUTTON */
+.middle-section-button {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #003329;
-    /*border: 1px solid red;*/
 }
 
-.section5-sub-div-middle-post-button button{
+.middle-section-button button {
     padding: 10px 90px;
 }
+
 
 
 
@@ -708,38 +703,34 @@ header {
     align-items: center;
     gap: 20px;
     padding: 30px 0 60px 0;
-    /* border: 1px solid red; */
 }
 
-#section6-heading-div
-{
-/* border: 1px solid rgb(0, 85, 255); */
-width: 100%;
-text-align: center;
+.section-heading {
+    width: 100%;
+    text-align: center;
 }
 
-#section6-heading-div h2 {
+.section-heading h2 {
     font-size: 40px;
     color: white;
     line-height: 1;
-    /* border: 1px solid red; */
 }
 
-#section6-p-div {
+.section-paragraph {
     width: 70%;
 }
 
-#section6-p-div p {
+.section-paragraph p {
     color: white;
     text-align: center;
 }
 
-#section6-button-div {
+.button-group {
     display: flex;
     gap: 15px;
 }
 
-#section6-button-div button {
+.button-group button {
     width: 10vw;
     font-size: 20px;
     padding: 10px 0;
@@ -755,12 +746,13 @@ text-align: center;
 
 
 
+
 /*******************************
 *           FOOTER             *
 *******************************/
 
 
-footer {
+.site-footer {
     background-color: #161817;
     z-index: 999;
     position: relative;
@@ -769,17 +761,16 @@ footer {
     color: white;
 }
 
-#footer-div-right {
+.footer-left {
     width: 50%;
     display: flex;
     align-items: center;
     gap: 30px;
     padding: 30px 0;
     flex-direction: column;
-
 }
 
-#footer-div-left-right {
+.footer-right {
     width: 50%;
     border-right: 1px solid rgba(255, 255, 255, 0.178);
     display: flex;
@@ -787,23 +778,24 @@ footer {
     gap: 30px;
     padding: 30px 0;
     flex-direction: column;
-
 }
 
-#about-us-footer-div {
+/* ABOUT US */
+.about-us-footer {
     width: 90%;
     display: flex;
     flex-direction: column;
 }
 
-#social-footer-div {
+/* SOCIAL */
+.social-footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 90%;
 }
 
-.social-buttons {
+.social-button {
     display: flex;
     justify-content: center;
     padding: 10px 10px;
@@ -811,31 +803,28 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.178);
     border-radius: 20px;
     gap: 10px;
-
 }
 
-.social-buttons-text {
+.social-button-text {
     display: inline-block;
     width: 80%;
-
 }
 
-.social-buttons-logo {
+.social-button-logo {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 20%;
-
 }
 
-.news-img-div img {
+/* NEWS */
+.news-img img {
     width: 50px;
     height: 50px;
     border-radius: 5px;
 }
 
-.news-img-div {
-
+.news-img {
     width: 12%;
     overflow: hidden;
     display: flex;
@@ -843,89 +832,67 @@ footer {
     align-items: center;
 }
 
-.news-sub-div {
+.news-item {
     padding: 10px;
     display: flex;
     gap: 10px;
 }
 
-#lastest-news-div {
+.latest-news {
     width: 90%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.news-heading-div {
+.news-heading {
     width: 80%;
     text-align: left;
 }
 
-.news-heading-div h3 {
-
+.news-heading h3 {
     padding-left: 10px;
     font-weight: 200;
 }
 
-footer hr {
+.site-footer hr {
     border: 1px solid rgba(255, 255, 255, 0.178);
     border-bottom: hidden;
 }
 
-#footer-div-right {
-    display: flex;
-    flex-direction: column;
-}
-
-#important-links-div-footer {
+/* LINKS */
+.important-links {
     width: 90%;
 }
 
-.links-div {
+.link-item {
     width: 100%;
     padding: 10px 0;
 }
 
-.links-div a {
+.link-item a {
     color: white;
     text-decoration: none;
     font-weight: 200;
-
 }
 
-#quick-contact-div-footer {
+/* QUICK CONTACT */
+.quick-contact {
     width: 90%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.quick-contact-sub-headings h4 {
+.contact-heading h4 {
     font-size: 20px;
     color: rgba(255, 255, 255, 0.411);
 }
 
-
-
-.quick-contact-info-div ul li {
+.contact-info ul li {
     list-style: none;
     padding: 10px 0;
     font-weight: 200;
 }
 
-#cursor {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border: 1px solid black;
-    background-color: rgba(255, 255, 255, 0.178);
-    border-radius: 50%;
-    z-index: 9999;
-    transition: 200ms;
-    pointer-events: none;
-}
 
-button,
-li {
-    cursor: url('Assets/Images/cursor.png'), auto;
-}
